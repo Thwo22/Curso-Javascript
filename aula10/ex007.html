@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando numeros</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+        .calculadora {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            border: 3px solid brown;
+        }
+        #tema {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+            padding: 3px;
+            background-color: rgb(73, 73, 73);
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <div class="calculadora">
+        
+        <input type="number" name="txtn1" id="txtn1" placeholder="Digite um Número"> +
+        <input type="number" name="txtn2" id="txtn2" placeholder="Digite outro Número">
+        <input type="button" value="somar" onclick="somar()">
+        <div id="res"></div>
+    </div>
+
+    <div id="tema" onmouseenter="temaescuro()", onmouseout="temaclaro()">noite</div>
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById("txtn1");
+            var tn2 = document.getElementById("txtn2");
+            var res = document.getElementById("res");
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong> `
+        }
+
+        function temaescuro() {
+            document.body.style.background = "black"
+            document.body.style.color = "white"
+            document.body.style.transition = "0.5s"
+            tema.innerHTML = "Dia"
+        }
+        function temaclaro() {
+            document.body.style.background = "white"
+            document.body.style.color = "black"
+            var dia = "dia"
+            tema.innerHTML = "Noite"
+        }
+    </script>
+</body>
+</html>
