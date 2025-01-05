@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 08</title>
+</head>
+<body>
+
+    <h1>DENTRAN</h1>
+    <label for="txtVelocidade">Digite sua velocidade: </label>
+    <input type="text" name="velocidae" id="txtVelocidade">
+
+    <input type="button" value="Calcular" onclick="calcular()">
+
+    <div class="resultado">
+        <p id="res"></p>
+    </div>
+
+    <h1>NACIONALIDADE</h1>
+
+    <label for="txrtNacio">Qual sua nacionalidade?</label>
+    <input type="text" name="nacionalidade" id="txtNacio">
+
+    <input type="button" value="localizar" onclick="localizar()">
+    
+    <div class="localização"><p id="local"></p></div>
+</body>
+</html>
+
+<script>
+
+    function calcular() {
+        let velocidade = document.getElementById("txtVelocidade").value
+        let speed = 60
+
+        if (velocidade > speed) {
+            res.innerText = "MULTADO! voce excedeu o limite de velocidade dessa pista"
+        } else {
+            res.innerText = "Prossiga nessa velocidade!"
+        }
+    
+    }
+    
+    function localizar() {
+        let user = document.getElementById("txtNacio").value
+
+        if user == "brasil" {
+            local.innerText = "Voce É BRASILEIRO!!"
+        } else {
+            "voce é estrangeiro"
+        }
+    }
+    
+</script>

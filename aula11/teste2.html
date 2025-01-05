@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .container-global {
+            display: flex;
+        }
+        .container-resultado, .container-form {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            align-content: flex-start;
+            padding: 15px;
+            width: 50%;
+            height: 100vh;
+            border-radius: 10px;
+        }
+        .container-form {
+            background-color: brown;
+        } 
+        .container-resultado {
+            background-color: rgb(0, 140, 255);
+            font-size: 32px;
+            padding: 20px;
+        }
+
+        #botao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <div class="container-global">
+        
+        <div class="container-form">
+            <p>SOBRE VOCÊ:</p>
+            <label for="txtNome" id="Nome">Seu nome:</label>
+            <input type="text" name="Nome" id="txtNome">
+    
+            <label for="txtSobrenome" id="Sobrenome"> Seu sobrenome:</label>
+            <input type="text" name="Sobrenome" id="txtSobrenome">
+    
+            <label for="txtIdade" id="idade">Sua idade:</label>
+            <input type="text" name="Idade" id="txtIdade">
+    
+            <label for="txtEmprego" id="Emprego">Sua Profissão:</label>
+            <input type="text" name="Emprego" id="txtEmprego">
+            <P>SEUS GOSTOS:</P>
+            <label for="txt">Seu hobies:</label>
+            <input type="text" id="txtHobbie">
+            <label for="txt">Série Favorita:</label>
+            <input type="text" id="txtSerie">
+            <label for="txt">Banda Favorita</label>
+            <input type="text" id="txtBanda">
+            <label for="txt">Musica Favorita</label>
+            <input type="text" id="txtMusica">
+            <label for="txt">Artista favorito</label>
+            <input type="text" id="txtArtista">
+            <label for="txt">Filme favorito</label>
+            <input type="text" id="txtFilme">
+        
+        </div>
+
+        <div class="container-resultado">
+            <p id="txtfinal"></p>
+        </div>
+
+    </div>
+
+    <input type="button" value="enviar" id="botao" onclick="dadosPessoais()">
+
+    <script>
+        function dadosPessoais() {
+            let nome = document.getElementById("txtNome").value;
+            let sobrenome = document.getElementById("txtSobrenome").value;
+            let idade = document.getElementById("txtIdade").value;
+            let emprego = document.getElementById("txtEmprego").value;
+            let hobbie = document.getElementById("txtHobbie").value
+            let serie = document.getElementById("txtSerie").value
+            let banda = document.getElementById("txtBanda").value
+            let musica = document.getElementById("txtMusica").value
+            let artista = document.getElementById("txtArtista").value
+            let filme = document.getElementById("txtFilme").value
+            
+            let resultado = (` <p> O seu nome é ${nome} ${sobrenome} voce tem ${idade} anos de idade e trabalha como ${emprego} <br> 
+            o seu principal hobbie é ${hobbie}, Sua musica serie favorita é ${serie}, sua banda favorita é ${banda}, sua musica favorita <br>
+            no momento é "${musica}", seu artista favorito é ${artista} e o seu filme favorito é ${filme}</p>` )
+
+            txtfinal.innerHTML = resultado
+        }
+    </script>
+</body>
+</html

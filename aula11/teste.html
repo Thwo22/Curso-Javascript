@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <input type="text" name="nome" id="txtnome" placeholder="digite seu nome">
+
+    <input type="text" name="sobrenome" id="txtsobrenome" placeholder="digite seu sobrenome">
+
+    <input type="button" value="enviar" id="botao" onclick="nomeDaPessoa()">
+
+    <h1 id="res">seu nome é...</h1>
+
+    <script>
+        function nomeDaPessoa () {
+            let nome = document.getElementById("txtnome").value;
+            let sobrenome = document.getElementById("txtsobrenome").value
+            let nomeCompleto = nome + " " + sobrenome
+
+            res.innerHTML = `seu nome é ${nomeCompleto}`
+        }
+    </script>
+</body>
+</html>
