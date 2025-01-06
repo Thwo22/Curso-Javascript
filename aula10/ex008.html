@@ -8,21 +8,20 @@
 <body>
 
     <h1>DENTRAN</h1>
-    <label for="txtVelocidade">Digite sua velocidade: </label>
-    <input type="text" name="velocidae" id="txtVelocidade">
-
-    <input type="button" value="Calcular" onclick="calcular()">
+        <label for="txtVelocidade">Digite sua velocidade: </label>
+        <input type="text" name="velocidae" id="txtVelocidade" >
+        <input type="submit" value="Calcular" onclick="calcular()">
 
     <div class="resultado">
         <p id="res"></p>
     </div>
 
     <h1>NACIONALIDADE</h1>
-
-    <label for="txrtNacio">Qual sua nacionalidade?</label>
-    <input type="text" name="nacionalidade" id="txtNacio">
-
-    <input type="button" value="localizar" onclick="localizar()">
+    
+        <label for="txrtNacio">Qual sua nacionalidade?</label>
+        <input type="text" name="nacionalidade" id="txtNacio" minlength="3" required>
+    
+        <input type="submit" value="localizar" onclick="localizar()">
     
     <div class="localização"><p id="local"></p></div>
 </body>
@@ -43,12 +42,14 @@
     }
     
     function localizar() {
-        let user = document.getElementById("txtNacio").value
+        let user = document.getElementById("txtNacio").value.toLowerCase().trim()
 
-        if user == "brasil" {
+        if (user === "") {
+            local.innerText = "defina sua nacionalidade"
+        } else if (user == "brasil") {
             local.innerText = "Voce É BRASILEIRO!!"
         } else {
-            "voce é estrangeiro"
+            local.innerText = "voce é estrangeiro"
         }
     }
     
