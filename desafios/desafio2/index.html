@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 2</title>
+    <link rel="stylesheet" href="css-global.css">
+    <script src="script.js"></script>
+</head>
+<body onload="carregar()">
+    <h1>Verificador de Idade</h1>
+    <div class="container-global">
+
+        <div class="container-txt">
+            <label for="txtdataNas">Ano de Nascimento:</label>
+            <input type="text" id="txtdataNas" required maxlength="4">
+        </div>
+
+        <div class="gen">
+            <input type="radio" name="genero" id="txtgenF">
+            <label for="txtgenF">Feminino</label>
+
+            <input type="radio" name="genero" id="txtgenM">
+            <label for="txtgenM">Masculino</label>
+        </div>
+
+        <input type="submit" value="Verificar" onclick="verificar()" id="botao">
+
+        <p id="msg">Resultado:</p>
+        <div class="container-img">
+            <img src="" alt="" id="imagem">
+        </div>
+
+    </div>
+
+
+    <script>
+        let agora = new Data()
+        let anoAtual = agora.getFullYear()
+        let anoNas = document.getElementsByClassName("txtdataNas").value;
+        let sexo = document.getElementsById("txtgenF").value.toLowerCase();
+
+        function verificar() {
+            let idade = anoNas - anoAtual;
+
+            if ( sexo == "mulher" ) {
+            res.innerHTML(`voce é uma mulher de ${idade} anos de idade`)
+            } else {
+            res.innerHTML(`voce é um homem de ${idade} anos de idade`)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0 20px 0px;
+    text-shadow: 0 0 5px black;
+}
+
+.container-global {
+    background-color: white;
+    margin: auto;
+    width: 40vw;
+    height: 65vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid brown;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.705);
+}
+
+.container-txt, .gen, .res{
+    padding: 1em;
+}
+
+#botao {
+    margin: 1em;
+}
+
+.container-img {
+    background-color: lightcoral;
+    width: 15vw;
+    height: 30vh;
+    border-radius: 50%;
+}
+
