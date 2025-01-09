@@ -9,9 +9,11 @@
 h1 {
     text-align: center;
     padding: 20px 0 10px 0;
+    color:white;
 }
 
-.container-pai {
+section {
+    background-color: white;
     color: white;
     margin: auto;
     width: 40vw;
@@ -25,11 +27,17 @@ h1 {
     box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.349);
 }
 
-.container-img {
+#foto{
     background-color: rgb(109, 109, 250);
     width: 20vw;
     height: 40vh;
     border-radius: 50%;
     box-shadow: 0px 0px 10px black;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 5px;
 }
 
