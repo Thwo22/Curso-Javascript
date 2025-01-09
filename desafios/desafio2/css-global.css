@@ -31,7 +31,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.705);
 }
 
-.container-txt, .gen, .res{
+.Nascimento, .Genero, .res{
     padding: 1em;
 }
 
@@ -39,10 +39,4 @@ h1 {
     margin: 1em;
 }
 
-.container-img {
-    background-color: lightcoral;
-    width: 15vw;
-    height: 30vh;
-    border-radius: 50%;
-}
 
