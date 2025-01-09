@@ -12,8 +12,13 @@ h1 {
     color:white;
 }
 
+#msg {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 0 3px black;
+    font-size:22px;
+}
 section {
-    background-color: white;
+    background-color: rgba(119, 119, 119, 0.13);
     color: white;
     margin: auto;
     width: 40vw;
@@ -25,14 +30,6 @@ section {
     text-shadow: 0px 0px 3px black;
     border-radius: 10px;
     box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.349);
-}
-
-#foto{
-    background-color: rgb(109, 109, 250);
-    width: 20vw;
-    height: 40vh;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px black;
 }
 
 footer {

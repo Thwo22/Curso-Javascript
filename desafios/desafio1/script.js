@@ -3,7 +3,9 @@ function carregar() {
     let img = document.getElementById("imagem")
     let data = new Date()
     let hora = data.getHours()
-    msg.innerHTML = `agora são ${hora} horas`
+    img.style.width = `270px`
+    img.style.height = `260px` 
+    msg.innerHTML = `Agora são <strong>${hora}</strong> horas`
 
     if (hora >= 0 && hora <= 11 ) {
         img.src = `imagens/dia.png`
