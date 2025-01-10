@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    text-align: center;
+}
+
+input {
+    all: unset;
+    background-color: rgb(127, 77, 173);
+    border: 1px solid rgb(92, 206, 92);
+    color: white;
+    margin: 10px auto;
+    width:160px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+input:hover {
+    width:15vw;
+    box-shadow: 0 0 10px green;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+}
+
+.container-global {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 182, 66);
+    width: 100%;
+    height: 100vh;
+}
+
+.ficha1, .ficha2, .ficha3, .ficha4 {
+    margin: 10px;
+    background-color: rgb(112, 27, 27);
+    border: 2px solid white;
+    width: 30vw;
+    height: 95vh;
+}
+
+#personagem1, #personagem2, #personagem3, #personagem4 {
+    background-color: rgb(19, 45, 160);
+    padding:10px;
+    margin: 10px 10px;
+    height: 70vh;
+}
+
+#nome1, #nome2, #nome3, #nome4 {
+    color: white;
+    margin: 30px auto;
+    font-size: 22px;
+}
