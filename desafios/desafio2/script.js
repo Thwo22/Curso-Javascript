@@ -4,8 +4,9 @@ function verificar() {
     let dataNascimento = document.getElementById(`dataDeNascimento`)
     let res = document.getElementById(`res`)
 
-    if (dataNascimento == 0 || dataNascimento > anoAtual ) {
-        alert(`ERRO! verifique os dados e tente novamente`)
+    if (dataNascimento === `` || Number(dataNascimento.value) > anoAtual ) {
+        alert(`ERRO! verifique os dados e tente novamente`);
+        return;
     } else {
         let fsex = document.getElementsByName(`sex`)
         let idade = anoAtual - Number(dataNascimento.value)
