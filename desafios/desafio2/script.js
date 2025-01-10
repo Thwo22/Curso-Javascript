@@ -10,44 +10,42 @@ function verificar() {
         let fsex = document.getElementsByName(`sex`)
         let idade = anoAtual - Number(dataNascimento.value)
         let genero = ``
-        let img = document.createElement(`img`)
-        img.setAttribute(`id`, `foto`)
+        let img = document.getElementById(`imagem`)
 
         if (fsex[0].checked) {
             genero = `mulher`
             if (idade >= 0 && idade <= 11 ) {
                 //criança
-                img.setAttribute(`src`, `imagens/menina.png`)
+                img.src = `imagens/menina.png`
             } else if ( idade <= 26 ) {
                 //adolescente
-                img.setAttribute(`src`, `imagens/adolescente-mulher.png`)
+                img.src = `imagens/adolescente-mulher.png`
             } else if ( idade <= 50 ) {
                 //adulto
-                img.setAttribute(`src`, `imagens/mulher-adulta.png`)
+                img.src= `imagens/mulher-adulta.png`
             } else{
                 //idoso
-                img.setAttribute(`src`, `imagens/idosa.png`)
+                img.src = `imagens/idosa.png`
             }
                 
         } else if (fsex[1].checked) {
             genero = `homem`
             if (idade >= 0 && idade <= 11 ) {
                 //criança
-                img.setAttribute(`src`, `imagens/menino.png`)
+                img.src = `imagens/menino.png`
             } else if ( idade <= 26 ) {
                 //adolescente
-                img.setAttribute(`src`, `imagens/adolescente-homem.png`)
+                img.src = `imagens/adolescente-homem.png`
             } else if ( idade <= 50 ) {
                 //adulto
-                img.setAttribute(`src`, `imagens/homem-adulto.png`)
+                img.src = `imagens/homem-adulto.png`
             } else{
                 //idoso
-                img.setAttribute(`src`, `imagens/idoso.png`)
+                img.src = `imagens/idoso.png`
             }
         }
         res.style.textAlign =`center`
         res.innerHTML = `detectamos ${genero} com ${idade} anos.`
-        res.appendChild(img)
         img.style.width = `200px`
     }
 
