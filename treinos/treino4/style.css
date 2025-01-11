@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: 30px;
+}
+
+.container-lamp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 50vh;
+    margin: auto;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    margin: 20px auto;
+}
+
+#botao {
+    padding: 5px;
+    margin: 10px;
+    width: 10vw;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.658);
+}
