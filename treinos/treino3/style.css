@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(to top, black, rgb(39, 39, 39));
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: brown;
+    margin: auto;
+    width: 25vw;
+    height: 75vh;
+    border-radius: 19px;
+}
+
+input {
+    all: unset;
+    background-color: rgba(240, 248, 255, 0.39);
+    border: 1px white solid;
+    height: 5vh;
+    width: 18vw;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.377);
+    font-weight: bolder;
+}
+
+#botao {
+    all: unset;
+    background-color: aliceblue;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.res-container {
+    background-color: black;
+    height: 26vh;
+    width: 17vw;
+    color: white;
+}
+
+#res {
+    padding: 15px;
+}
