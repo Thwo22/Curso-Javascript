@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+main{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: brown;
+    width: 500px;
+    height: 50vh;
+    border-radius: 8px;
+}
+
+.lista {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: inset -1px -1px 6px;
+    overflow-y: auto;
+}
