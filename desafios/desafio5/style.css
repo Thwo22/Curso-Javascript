@@ -34,3 +34,7 @@ main{
     box-shadow: inset -1px -1px 6px;
     overflow-y: auto;
 }
+
+.res {
+    color: white;
+}
